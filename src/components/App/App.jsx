@@ -1,5 +1,5 @@
 import './App.css'
-import MyName from '../MyName/MyName'
+import MyName from '../MyName/myName'
 
 function App() {
 	return (
@@ -7,6 +7,7 @@ function App() {
 			<div className='app-container'>
 				<h1>Привет React</h1>
 				<p>Это мой первый проект на React + Vite</p>
+				<p>New line</p>
 				<MyName />
 			</div>
 		</div>
