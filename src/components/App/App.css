@@ -1,0 +1,8 @@
+.app {
+	padding-block: 80px;
+	text-align: center;
+}
+
+.app-container > *:not(:last-child) {
+	margin-bottom: 15px;
+}
