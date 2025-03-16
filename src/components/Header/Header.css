@@ -1,0 +1,29 @@
+.header {
+}
+.header-container {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	justify-content: space-between;
+	padding-block: 15px;
+	border-bottom: 1px solid white;
+}
+.header-logo {
+	flex-basis: 40px;
+}
+.header-logo img {
+	width: 100%;
+}
+.header-menu {
+}
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	row-gap: 7px;
+}
+.menu-item {
+	flex-direction: row-reverse;
+}
+.menu-link {
+}
