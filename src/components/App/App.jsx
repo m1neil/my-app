@@ -1,17 +1,17 @@
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import Homepage from '../pages/Homepage'
-import './App.css'
+import useLocalStorage from "../../assets/hooks/useLocalStorate"
 
-function App() {
+const App = () => {
+	const [amountDays, setAmountDays, resetAmountDays] = useLocalStorage('past-days', 0)
+
+	const handleDaysChange = () => {
+		setAmountDays(prevAmountDays => prevAmountDays + 1)
+	}
+
 	return (
-		<>
-			<Header />
-			<main className="page">
-				<Homepage />
-			</main>
-			<Footer />
-		</>
+		<div>
+			<button onClick={handleDaysChange} type="button">Дней: {amountDays}</button>
+			<button onClick={resetAmountDays} type="button">Сбросить</button>
+		</div>
 	)
 }
 
